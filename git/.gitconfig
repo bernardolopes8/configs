@@ -1,0 +1,17 @@
+[core]
+	editor = code --wait
+	autocrlf = true
+[credential]
+	helper = manager-core
+[merge]
+	tool = kdiff3
+[mergetool "kdiff3"]
+	path = C:/Program Files/KDiff3/bin/kdiff3.exe
+	trustExitCode = false
+[diff]
+	guitool = kdiff3
+[difftool "kdiff3"]
+	path = C:/Program Files/KDiff3/bin/kdiff3.exe
+	trustExitCode = false
+[alias]
+	cleanws = !git reset --hard && git clean -dxff
